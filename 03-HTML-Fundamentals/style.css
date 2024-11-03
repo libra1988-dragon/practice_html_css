@@ -6,6 +6,13 @@ p,
 li {
   /*글꼴*/
   font-family: sans-serif;
+  color: #444444;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 h1 {
@@ -39,6 +46,126 @@ li {
   font-size: 20px;
 }
 
-footer p {
+/* footer p {
+  font-size: 16px;
+} */
+
+#copyright {
   font-size: 16px;
 }
+
+#author {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  /*리스트 앞에 점 모양 없애기*/
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+/*li태그중의 자식들 태그 중 짝수인 애들*/
+li:nth-child(even) {
+  /* color: red; */
+}
+
+/* article p:last-child {
+  color: red;
+} */
+
+/*스타일 링크*/
+
+/*수도클래스로 a태그중에 href속성이 있는 애들만*/
+a:link {
+  color: #1098ad;
+  /*링크 밑줄 없애기*/
+  text-decoration: none;
+}
+
+/*a요소를 통해 링크를 방문했을때*/
+a:visited {
+  /* color: #777; */
+}
+
+/*a요소에 커서를 올려놨을떄*/
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+/*a요소를 클릭했을떄*/
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/*LVHA*/
+
+/*css 출동 해결*/
+
+/* #copyright {
+  color: red;
+}
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
+
+/*css 상속
+css에서 상속은 
+부모 요소의 속성들을 자식요소에서 
+물려 받는 것을 의미한다. 
+허나 부모에서 속성을 지정했다고 해서
+전부 자식들이 상속을 받는것은 아니다.
+주로 text관련 속성들을 상속 받는다. 
+*/
+
+/*
+ css 적용 우선 순위
+ 1. !important
+ 2. 인라인 css
+ 3. #id 선택자
+ 4. class 선택자 or 수도클래스
+ 5. 요소 선택자
+ 6. 유니버셜 선택자 *
+*/
+
+/*
+유니버셜 선택자는 모든 요소에 적용되고 
+상속이 존재하지 않는다.
+*/

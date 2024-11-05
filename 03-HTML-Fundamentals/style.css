@@ -1,3 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 700px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; 
+  위의 패딩을 줄여서 한번에 적으면 
+  아래와 같이 적을 수 있다.
+  앞에 값은 위 아래 뒤에 값은 오른쪽 왼쪽을 나타낸다.
+  */
+
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
 h1,
 h2,
 h3,
@@ -23,10 +70,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -39,11 +89,27 @@ p {
   font-size: 22px;
   /*줄 사이의 간격*/
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 30px;
 }
 
 li {
   /*font-size속성의 기본값은 16px이단*/
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  /*
+   일반적으로 마지막에는 마진을 넣지 않기에]
+   초기화 해준다.
+  */
+  margin-bottom: 0;
 }
 
 /* footer p {
@@ -67,16 +133,6 @@ li {
 .related {
   /*리스트 앞에 점 모양 없애기*/
   list-style: none;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 /* .first-li {
@@ -169,3 +225,7 @@ css에서 상속은
 유니버셜 선택자는 모든 요소에 적용되고 
 상속이 존재하지 않는다.
 */
+.post-img {
+  width: 50%;
+  height: auto;
+}

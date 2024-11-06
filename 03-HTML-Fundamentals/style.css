@@ -3,8 +3,16 @@
   padding: 0;
 }
 
+/* PAGE SECTION */
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: 18px solid #1098ad;
+}
+
 .container {
-  width: 700px;
+  width: 800px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -22,7 +30,7 @@
 
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 nav {
@@ -44,6 +52,8 @@ aside {
   padding: 50px 0;
   width: 500px;
 }
+
+/* SMALLER ELEMENTS */
 
 h1,
 h2,
@@ -102,6 +112,7 @@ li {
   /*font-size속성의 기본값은 16px이단*/
   font-size: 20px;
   margin-bottom: 10px;
+  /* display: inline; */
 }
 
 li:last-child {
@@ -228,4 +239,18 @@ css에서 상속은
 .post-img {
   width: 50%;
   height: auto;
+}
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+  display: block; */
+  margin-right: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
 }

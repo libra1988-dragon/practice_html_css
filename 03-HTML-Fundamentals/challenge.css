@@ -31,6 +31,20 @@ body {
   text-align: center;
   font-size: 22px;
   padding: 15px;
+  position: relative;
+}
+
+h2::after {
+  content: "SALE";
+  color: white;
+  background-color: red;
+  position: absolute;
+  top: -15px;
+  left: -25px;
+  font-size: 13px;
+  display: inline-block;
+  padding: 5px 10px;
+  letter-spacing: 2px;
 }
 
 .coverse-img {
@@ -62,6 +76,40 @@ p {
 .info:hover,
 .info:active {
   text-decoration: none;
+}
+
+/*제품 색상 정보*/
+
+.product-color div {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.product-black {
+  background-color: black;
+}
+
+.product-blue {
+  background-color: blue;
+}
+
+.product-red {
+  background-color: red;
+}
+
+.product-yellow {
+  background-color: yellow;
+}
+
+.product-green {
+  background-color: green;
+}
+
+.product-sandybrown {
+  background-color: sandybrown;
 }
 
 /*제품 세부 정보*/

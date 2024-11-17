@@ -9,6 +9,7 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 18px solid #1098ad;
+  position: relative;
 }
 
 .container {
@@ -194,6 +195,32 @@ a:active {
   font-style: italic;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h3 + p::first-line {
+  color: red;
+} */
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe78e;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
 /*LVHA*/
 
 /*css 출동 해결*/
@@ -254,3 +281,80 @@ nav a:link {
 nav a:link:last-child {
   margin-right: 0;
 }
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+/*
+  블록 요소
+  인라인 요소
+
+  인라인 요소란 
+  컨텐츠 크기만큼 공간을 차지하고 
+  line-break가 없으며
+  width, height를 설정할 수 없고
+  margin과 padding은 수평으로만 설정 가능한 요소를 
+  말한다.
+
+  대표적으로 a, butoon, strong, em, 등
+
+
+
+  블록요소란
+  인라인과 반대로 컨텐츠 크기에 상관없이
+  부모요소의 100%의 공간을 차지한다.
+  line-break가 있고
+  width,height를 설정할 수 있고
+  margin, padding 모든 방향 설정 가능하다.
+  대표적으로는 p, div, li, body, footer 등등
+  거의 대부분의 요소가 블록요소이다.
+
+  인라인 블록요소
+  블록과 인라인의 기능을 합쳐놓은 요소로
+  겉으로 보기에는 인라인의 특징을 지니고 있고
+  안으로는 블록요소의 특징을 지닌다.
+
+  컨텐츠 크기만큼 공간을 차지하지만
+  width, height 설정
+  margin, padding 모든 값 설정가능
+  ex) img
+
+  position 속성
+  position 속성의 값은 5가지가 있다.
+  1) static
+  2) relative
+  3) absolute
+  4) fixed
+  5) sticky
+   
+  static	기준 없음 (배치 불가능 / 기본값)
+  relative	요소 자기 자신을 기준으로 배치
+  absolute	부모(조상) 요소를 기준으로 배치
+  fixed	뷰포트 기준으로 배치
+  stickey	스크롤 영역 기준으로 배치
+
+  static은 기본형으로 아무것도 없을경우 static이다
+  html 문서 순서에 따라 표시되며
+  top, bottom, left, right 무시한다.
+
+  relative는 요소를 원래 위치에서 벗어나게 배치 할 수
+  있다.
+  top, bottom, left, right적용
+
+  absolute는 자신의 상위 속성을 기준으로 배치된다.
+  일반적으로 자신의 부모를 기준으로 배치되는데
+  상위속성이 static이 아닌 요소가 없을 경우
+  dom트리를 타고 올라가다 body요소가 배치기준이 된다.
+  그러나 일반적으로는 부모요소를 기준으로 배치한다.
+  이때 부모는 relative로 설정하고
+  자식은 absolute로 해서 부모기준으로 배치를 한다.
+  position이 ab
+
+
+*/
